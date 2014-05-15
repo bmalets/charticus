@@ -1,0 +1,3 @@
+[submodule "vendor/d3-charts"]
+	path = vendor/d3-charts
+	url = https://github.com/bmalets/d3-charts.git
