@@ -16,8 +16,8 @@
 /tmp
 
 # ignore tmp asset files
-app/assets/javascipts/d3-charts
-app/assets/stylesheets/d3-charts
+/app/assets/javascipts/d3-charts/*.js
+/app/assets/stylesheets/d3-charts/*.css
 
 # ignore external gems
 #vendor/d3-charts
