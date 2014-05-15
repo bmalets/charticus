@@ -1,5 +1,5 @@
 == README
 
- It's rails app to test d3-chars gem.
+It's rails app to test d3-chars gem.
  
- This app on production: (fathomless-headland-8678.herokuapp.com)[http://fathomless-headland-8678.herokuapp.com]
+This app on production: [Charticus](http://fathomless-headland-8678.herokuapp.com).
