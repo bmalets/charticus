@@ -34,3 +34,86 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_chart_path,
             :class => 'btn btn-primary' %>
+
+
+<br/>
+
+<h1>Less-Common Charts</h1>
+<div><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+<br/>
+
+  <ul class="breadcrumbs">
+    <li><a href="#"> Treemap </a></li>
+  </ul>
+  <%= treemap("http://0.0.0.0:3000/treemap.json") %>
+
+<br/>
+
+  <ul class="breadcrumbs">
+    <li><a href="#"> Streamgraph </a></li>
+  </ul>
+  <%= streamgraph("http://0.0.0.0:3000/streamgraph.csv") %>
+
+<br/>
+
+  <ul class="breadcrumbs">
+    <li><a href="#">Radar Chart</a></li>
+  </ul>
+  <%= radar_chart("http://0.0.0.0:3000/radar_chart.json") %>
+
+<br/>
+
+  <ul class="breadcrumbs">
+    <li><a href="#">Polar Area Diagram</a></li>
+  </ul>
+  <!--%= polar_area_diagram([1,2,3,4,5]) %-->
+
+<br/>
+
+  <ul class="breadcrumbs">
+    <li><a href="#">Bubble Chart</a></li>
+  </ul>
+  <%= bubble_chart( "http://0.0.0.0:3000/bubble_chart.json" ) %>
+
+<br/>
+
+<h1>Common Charts</h1>
+
+<br/>
+
+  <ul class="breadcrumbs">
+    <li><a href="#">Line Chart</a></li>
+  </ul>
+  <%= line_chart( [1,2,3,4,5] ) %>
+
+<br/>
+
+  <ul class="breadcrumbs">
+    <li><a href="#">Pie Chart</a></li>
+  </ul>
+  <%= pie_chart( "http://0.0.0.0:3000/pie_chart.csv" ) %>
+
+<br/>
+
+  <ul class="breadcrumbs">
+    <li><a href="#">Histogram</a></li>
+  </ul>
+  <%= histogram( [ 0.3868526664824069,  0.4917571016462725,
+                   0.38783356112423817, 0.5401234418737314,
+                   0.41510852382870295, 0.46538050029079203 ] ) %>
+
+<br/>
+
+  <ul class="breadcrumbs">
+    <li><a href="#">Vertical Bar Chart</a></li>
+  </ul>
+  <%= vertical_bar_chart( "http://0.0.0.0:3000/vertical_bar_chart.tsv" ) %>
+
+<br/>
+
+  <ul class="breadcrumbs">
+    <li><a href="#">Horizontal Bar Chart</a></li>
+  </ul>
+  <%= horizontal_bar_chart( [1,2,3,4,5] ) %>
+
+<br/>            

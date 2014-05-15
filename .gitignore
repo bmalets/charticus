@@ -16,4 +16,4 @@
 /tmp
 
 # ignore external gems
-vendor/d3-charts
+#vendor/d3-charts
