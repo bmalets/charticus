@@ -16,7 +16,7 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
   </head>
   <body>
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
@@ -27,9 +27,22 @@
           <a class="brand" href="#">Charticus</a>
           <div class="container nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Chart types <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Common</a></li>
+                  <li><a href="#">Common Plots</a></li>
+                  <li><a href="#">Field Specific</a></li>
+                  <li><a href="#">Less Common</a></li>
+                  <li><a href="#">Well known named</a></li>
+                  <li><a href="#">Other</a></li>
+                  <li><a href="#"></a></li>
+                  <li class="divider"></li>
+                  <li><a href="/">Show All</a></li>
+                </ul>
+              </li>
+              <li class="divider-vertical"></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

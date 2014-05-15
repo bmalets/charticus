@@ -1,3 +1,473 @@
+<br/>
+<h1>Common Charts</h1>
+
+<div class="accordion" id="accordion1">
+  
+  <div class="accordion-group">  
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse11">
+        Line Chart
+      </a>
+    </div>
+    <div id="collapse11" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <%= line_chart( [1,2,3,4,5] ) %>
+      </div>
+    </div>
+  </div>
+   
+  <div class="accordion-group">  
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse12">
+        Pie Chart
+      </a>
+    </div>
+    <div id="collapse12" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <%= pie_chart( "http://0.0.0.0:3000/pie_chart.csv" ) %>
+      </div>
+    </div>
+  </div> 
+   
+  <div class="accordion-group">  
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse13">
+        Histogram
+      </a>
+    </div>
+    <div id="collapse13" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <%= histogram( [ 0.3868526664824069,  0.4917571016462725,
+                         0.38783356112423817, 0.5401234418737314,
+                         0.41510852382870295, 0.46538050029079203 ] ) %>   
+      </div>   
+    </div>
+  </div>   
+   
+  <div class="accordion-group">  
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse14">
+        Vertical Bar Chart
+      </a>
+    </div>
+    <div id="collapse14" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <%= vertical_bar_chart( "http://0.0.0.0:3000/vertical_bar_chart.tsv" ) %>  
+      </div>   
+    </div>
+  </div>  
+   
+  <div class="accordion-group">  
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse15">
+        Horizontal Bar Chart
+      </a>
+    </div>
+    <div id="collapse15" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <%= horizontal_bar_chart( [1,2,3,4,5] ) %>  
+      </div>   
+    </div>
+  </div>  
+
+</div>  
+
+<h1>Less-Common Charts</h1>
+
+<div class="accordion" id="accordion2">
+  
+  <div class="accordion-group">  
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse21">
+        Treemap <span class="badge label-warning pull-right">FIX</span>
+      </a>
+    </div>
+    <div id="collapse21" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <%= treemap("http://0.0.0.0:3000/treemap.json") %>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse22">
+        Streamgraph <span class="badge label-warning pull-right">FIX</span>
+      </a>
+    </div>
+    <div id="collapse22" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <%= streamgraph("http://0.0.0.0:3000/streamgraph.csv") %>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse23">
+        Radar Chart
+      </a>
+    </div>
+    <div id="collapse23" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <%= radar_chart("http://0.0.0.0:3000/radar_chart.json") %>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse24">
+        Polar Area Diagram <span class="badge label-warning pull-right">FIX</span>
+      </a>
+    </div>
+    <div id="collapse24" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!--%= polar_area_diagram([1,2,3,4,5]) %-->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse25">
+        Bubble Chart
+      </a>
+    </div>
+    <div id="collapse25" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <%= bubble_chart( "http://0.0.0.0:3000/bubble_chart.json" ) %>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h1>Common Plots</h1>
+
+<div class="accordion" id="accordion3">
+  
+  <div class="accordion-group">  
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse31">
+        Biplot <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse31" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse32">
+        Box Plot <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse32" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse33">
+        Dot Plot <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse33" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse34">
+        Probability Plot <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse34" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse35">
+        Scatterplot <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse35" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h1>Field Specific Charts</h1>
+
+<div class="accordion" id="accordion4">
+  
+  <div class="accordion-group">  
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapse41">
+        Candlestick Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse41" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapse42">
+        Kagi Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse42" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapse43">
+        Open-high-low-close Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse43" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapse44">
+        Sparkline <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse44" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h1>Well-known named Charts</h1>
+
+<div class="accordion" id="accordion5">
+  
+  <div class="accordion-group">  
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapse51">
+        Nolan Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse51" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapse52">
+        Pert Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse52" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapse53">
+        Gantt Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse53" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapse54">
+        Smith Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse54" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<h1>Other Charts</h1>
+
+
+<div class="accordion" id="accordion6">
+  
+  <div class="accordion-group">  
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapse61">
+        Control Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse61" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapse62">
+        Gredinger Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse62" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapse63">
+        Heatmap <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse53" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapse64">
+        Natal Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse64" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapse65">
+        Nomogram <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse65" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapse66">
+        Pareto Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse66" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapse67">
+        Run Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse67" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapse68">
+        Strip Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse68" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapse69">
+        Structure Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse69" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapse610">
+        Vowel Chart <span class="badge pull-right">TODO</span>
+      </a>
+    </div>
+    <div id="collapse610" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <!-- -->
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--
 <%- model_class = Chart -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
@@ -34,86 +504,4 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_chart_path,
             :class => 'btn btn-primary' %>
-
-
-<br/>
-
-<h1>Less-Common Charts</h1>
-<div><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
-<br/>
-
-  <ul class="breadcrumbs">
-    <li><a href="#"> Treemap </a></li>
-  </ul>
-  <%= treemap("http://0.0.0.0:3000/treemap.json") %>
-
-<br/>
-
-  <ul class="breadcrumbs">
-    <li><a href="#"> Streamgraph </a></li>
-  </ul>
-  <%= streamgraph("http://0.0.0.0:3000/streamgraph.csv") %>
-
-<br/>
-
-  <ul class="breadcrumbs">
-    <li><a href="#">Radar Chart</a></li>
-  </ul>
-  <%= radar_chart("http://0.0.0.0:3000/radar_chart.json") %>
-
-<br/>
-
-  <ul class="breadcrumbs">
-    <li><a href="#">Polar Area Diagram</a></li>
-  </ul>
-  <!--%= polar_area_diagram([1,2,3,4,5]) %-->
-
-<br/>
-
-  <ul class="breadcrumbs">
-    <li><a href="#">Bubble Chart</a></li>
-  </ul>
-  <%= bubble_chart( "http://0.0.0.0:3000/bubble_chart.json" ) %>
-
-<br/>
-
-<h1>Common Charts</h1>
-
-<br/>
-
-  <ul class="breadcrumbs">
-    <li><a href="#">Line Chart</a></li>
-  </ul>
-  <%= line_chart( [1,2,3,4,5] ) %>
-
-<br/>
-
-  <ul class="breadcrumbs">
-    <li><a href="#">Pie Chart</a></li>
-  </ul>
-  <%= pie_chart( "http://0.0.0.0:3000/pie_chart.csv" ) %>
-
-<br/>
-
-  <ul class="breadcrumbs">
-    <li><a href="#">Histogram</a></li>
-  </ul>
-  <%= histogram( [ 0.3868526664824069,  0.4917571016462725,
-                   0.38783356112423817, 0.5401234418737314,
-                   0.41510852382870295, 0.46538050029079203 ] ) %>
-
-<br/>
-
-  <ul class="breadcrumbs">
-    <li><a href="#">Vertical Bar Chart</a></li>
-  </ul>
-  <%= vertical_bar_chart( "http://0.0.0.0:3000/vertical_bar_chart.tsv" ) %>
-
-<br/>
-
-  <ul class="breadcrumbs">
-    <li><a href="#">Horizontal Bar Chart</a></li>
-  </ul>
-  <%= horizontal_bar_chart( [1,2,3,4,5] ) %>
-
-<br/>            
+-->          
