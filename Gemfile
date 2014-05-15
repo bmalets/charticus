@@ -40,5 +40,3 @@ gem 'd3-charts', github: 'bmalets/d3-charts'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'rails_12factor', group: :production
-
