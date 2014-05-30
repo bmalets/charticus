@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/bmalets/d3-charts.git
-  revision: 61946e7ca26c4b47e20e480673100cbc957ab72d
+  revision: 66ae2d52258c02b418438506f590b983f71dee40
   specs:
     d3-charts (4.5.1)
       railties (>= 3.1)
@@ -54,7 +54,7 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     erubis (2.7.0)
-    execjs (2.0.2)
+    execjs (2.1.0)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (2.0.7)
@@ -69,9 +69,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (5.3.4)
-    multi_json (1.10.0)
+    multi_json (1.10.1)
     pg (0.17.1)
-    polyglot (0.3.4)
+    polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -118,14 +118,14 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     thor (0.19.1)
-    thread_safe (0.3.3)
+    thread_safe (0.3.4)
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
     turbolinks (2.2.2)
       coffee-rails
-    tzinfo (1.1.0)
+    tzinfo (1.2.0)
       thread_safe (~> 0.1)
     uglifier (2.5.0)
       execjs (>= 0.3.0)
