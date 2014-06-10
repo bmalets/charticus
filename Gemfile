@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 #gem 'd3-charts', group: :development, path: './vendor/d3-charts'
-gem 'd3-charts', github: 'bmalets/d3-charts'
+gem 'd3-charts'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
