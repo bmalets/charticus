@@ -1,5 +1,0 @@
-== README
-
-It's rails app to test d3-chars gem.
- 
-This app on production: http://charticus.herokuapp.com.
