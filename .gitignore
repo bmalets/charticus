@@ -12,7 +12,8 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*.log
+/log/*
+!/log/.keep
 /tmp
 
 # ignore tmp asset files
@@ -21,3 +22,5 @@
 
 # ignore external gems
 #vendor/d3-charts
+
+*.DS_Store
