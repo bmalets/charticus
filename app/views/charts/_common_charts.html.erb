@@ -1,0 +1,25 @@
+<h1>Common Charts</h1>
+
+<div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+  
+  <%= accordion_item 'Line Chart' do %>
+    <%= line_chart( [1,2,3,4,5] ) %>
+  <% end %>
+
+  <%= accordion_item 'Pie Chart' do %>
+    <%= line_chart( [1,2,3,4,5] ) %>
+  <% end %>  
+
+  <%= accordion_item 'Histogram' do %>
+    <%= histogram( [ 0.3868526664824069,  0.4917571016462725, 0.38783356112423817, 0.5401234418737314, 0.41510852382870295, 0.46538050029079203 ] ) %>  
+  <% end %>
+
+  <%= accordion_item 'Vertical Bar Chart' do %>
+    <%= vertical_bar_chart( "vertical_bar_chart.tsv" ) %>  
+  <% end %>
+
+  <%= accordion_item 'Horizontal Bar Chart' do %>
+    <%= horizontal_bar_chart( [1,2,3,4,5] ) %>  
+  <% end %>
+
+</div>

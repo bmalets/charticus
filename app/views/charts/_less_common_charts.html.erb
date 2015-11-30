@@ -1,0 +1,26 @@
+<h1>Less-Common Charts</h1>
+
+<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+
+  <%= accordion_item 'Treemap' do %>
+    <%= treemap("treemap.json") %>
+  <% end %>
+
+  <%= accordion_item 'Streamgraph' do %>
+    <%= streamgraph("streamgraph.csv") %>
+  <% end %>
+
+  <%= accordion_item 'Radar Chart' do %>
+    <%= radar_chart("radar_chart.json") %>
+  <% end %>
+
+
+  <%= accordion_item 'Polar Area Diagram' do %>
+    <%= polar_area_diagram("polar_area_diagram.json") %>
+  <% end %>
+
+  <%= accordion_item 'Bubble Chart' do %>
+    <%= bubble_chart( "bubble_chart.json" ) %>
+  <% end %>
+
+</div>
